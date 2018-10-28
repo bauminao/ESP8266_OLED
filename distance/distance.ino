@@ -20,7 +20,7 @@ VL53L0X sensor;
 // other than the intended target. It works best in dark
 // conditions.
 
-//#define LONG_RANGE
+#define LONG_RANGE
 
 
 // Uncomment ONE of these two lines to get
@@ -28,21 +28,21 @@ VL53L0X sensor;
 // - higher accuracy at the cost of lower speed
 
 //#define HIGH_SPEED
-//#define HIGH_ACCURACY
+#define HIGH_ACCURACY
 
 
 void setup()
 {
-  Serial.begin(115200);
-  Wire.begin(41);
+  Serial.begin(9600);
+  Wire.begin();
 
   Serial.println("Serial Init done.");
 
   sensor.init();
   Serial.println("Sensor Init done.");
 
-  sensor.setTimeout(2500);
-  sensor.startContinuous(500);
+  sensor.setTimeout(500);
+  //sensor.startContinuous(500);
 
 #if defined LONG_RANGE
   // lower the return signal rate limit (default is 0.25 MCPS)
