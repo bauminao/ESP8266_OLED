@@ -2,7 +2,7 @@ rm -rf ./build
 
 if [ -z $1 ] 
 then
-  sketchfile=distance.ino
+  sketchfile=distance/distance.ino
 else
   sketchfile=$1
 fi
