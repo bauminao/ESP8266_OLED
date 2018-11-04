@@ -8,6 +8,8 @@ The first small "apps" are:
 * graphic_test
 * i2cscan
 * distance (attached an VL53L0XV2)
+* compass (attached on HMC5883L)
+* pressure (attached on BMP180)
 
 ## graphic_test
 * pure taken from examples of u8g2
@@ -23,3 +25,11 @@ The first small "apps" are:
 * Measured distance is printed to serial. 
 * Following picture shows the wireing. 
 ![alt text](doc/readme_pics/pic_board_01.jpg)
+
+## compass
+* Got stuck on init error.
+* Perhaps something on the library. Found an comment on google about getting rid of these by updateing library.
+
+## pressure
+* example runs out of the box.
+
