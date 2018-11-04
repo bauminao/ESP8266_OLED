@@ -33,7 +33,7 @@ VL53L0X sensor;
 
 void setup()
 {
-  Serial.begin(9600);
+  Serial.begin(115200);
   Wire.begin();
 
   Serial.println("Serial Init done.");
